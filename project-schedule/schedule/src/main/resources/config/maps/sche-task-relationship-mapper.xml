@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hhwy.hbc.schedule.task.mapper.ScheTaskRelationshipMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hhwy.hbc.schedule.task.model.ScheTaskRelationship">
+        <id column="id" property="id" />
+        <result column="task_pre_id" property="taskPreId" />
+        <result column="task_next_id" property="taskNextId" />
+        <result column="relationship_id" property="relationshipId" />
+        <result column="interval_days" property="intervalDays" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user" property="createUser" />
+        <result column="update_user" property="updateUser" />
+        <result column="update_time" property="updateTime" />
+        <result column="delete_flag" property="deleteFlag" />
+    </resultMap>
+
+</mapper>

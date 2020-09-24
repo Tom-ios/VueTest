@@ -1,0 +1,1 @@
+META-INF/resources/WEB-INF/jsp目录用来存放jsp文件。

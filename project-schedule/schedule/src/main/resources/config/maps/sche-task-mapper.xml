@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hhwy.hbc.schedule.task.mapper.ScheTaskMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hhwy.hbc.schedule.task.model.ScheTask">
+        <id column="id" property="id" />
+        <result column="task_code" property="taskCode" />
+        <result column="task_name" property="taskName" />
+        <result column="project_id" property="projectId" />
+        <result column="wbs_id" property="wbsId" />
+        <result column="calendar_id" property="calendarId" />
+        <result column="resource_id" property="resourceId" />
+        <result column="plan_start_date" property="planStartDate" />
+        <result column="plan_end_date" property="planEndDate" />
+        <result column="plan_duration" property="planDuration" />
+      
+        <result column="taskState" property="task_state" />
+        <result column="scheState" property="sche_state" />
+        <result column="expenseId" property="expense_id" />
+         
+        <result column="principal" property="principal" />
+        <result column="task_type" property="taskType" />
+        <result column="free_float" property="freeFloat" />
+        <result column="total_float" property="totalFloat" />
+        <result column="limit_type" property="limitType" />
+        <result column="es_date" property="esDate" />
+        <result column="ef_date" property="efDate" />
+        <result column="ls_date" property="lsDate" />
+        <result column="lf_date" property="lfDate" />
+        <result column="sche_calc_type" property="scheCalcType" />
+     
+        <result column="weights" property="weights" />
+      
+      
+        
+        <result column="task_bal_level" property="taskBalLevel" />
+        <result column="critical_task" property="criticalTask" />
+        <result column="group_id" property="groupId" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+        <result column="update_user" property="updateUser" />
+        <result column="update_time" property="updateTime" />
+        
+        <collection  property="dependencies" ofType="com.hhwy.hbc.schedule.task.model.ScheTask">
+            <id column="id1" property="id" />
+	        <result column="task_code1" property="taskCode" />
+	        <result column="task_name1" property="taskName" />
+	        <result column="project_id1" property="projectId" />
+	        <result column="wbs_id1" property="wbsId" />
+	        <result column="calendar_id1" property="calendarId" />
+	        <result column="resource_id1" property="resourceId" />
+	        <result column="plan_start_date1" property="planStartDate" />
+	        <result column="plan_end_date1" property="planEndDate" />
+	        <result column="plan_duration1" property="planDuration" />
+	       
+	        <result column="taskState" property="task_state1" />
+        	<result column="scheState" property="sche_state1" />
+        	<result column="expenseId" property="expense_id1" />
+	      
+	        <result column="principal1" property="principal" />
+	        <result column="task_type1" property="taskType" />
+	        <result column="free_float1" property="freeFloat" />
+	        <result column="total_float1" property="totalFloat" />
+	        <result column="limit_type1" property="limitType" />
+	        <result column="es_date1" property="esDate" />
+	        <result column="ef_date1" property="efDate" />
+	        <result column="ls_date1" property="lsDate" />
+	        <result column="lf_date1" property="lfDate" />
+	        <result column="sche_calc_type1" property="scheCalcType" />
+	      
+	        <result column="weights1" property="weights" />
+	       
+	       
+	      
+	        <result column="task_bal_level1" property="taskBalLevel" />
+	        <result column="critical_task1" property="criticalTask" />
+	        <result column="group_id1" property="groupId" />
+	        <result column="create_user1" property="createUser" />
+	        <result column="create_time1" property="createTime" />
+	        <result column="update_user1" property="updateUser" />
+	        <result column="update_time1" property="updateTime" />
+        </collection >
+        
+        
+        
+        <collection  property="beDependencies" ofType="com.hhwy.hbc.schedule.task.model.ScheTask">
+            <id column="id2" property="id" />
+	        <result column="task_code2" property="taskCode" />
+	        <result column="task_name2" property="taskName" />
+	        <result column="project_id2" property="projectId" />
+	        <result column="wbs_id2" property="wbsId" />
+	        <result column="calendar_id2" property="calendarId" />
+	        <result column="resource_id2" property="resourceId" />
+	        <result column="plan_start_date2" property="planStartDate" />
+	        <result column="plan_end_date2" property="planEndDate" />
+	        <result column="plan_duration2" property="planDuration" />
+	        
+	        <result column="taskState" property="task_state2" />
+        	<result column="scheState" property="sche_state2" />
+       		<result column="expenseId" property="expense_id2" />
+	        <result column="principal2" property="principal" />
+	        <result column="task_type2" property="taskType" />
+	        <result column="free_float2" property="freeFloat" />
+	        <result column="total_float2" property="totalFloat" />
+	        <result column="limit_type2" property="limitType" />
+	        <result column="es_date2" property="esDate" />
+	        <result column="ef_date2" property="efDate" />
+	        <result column="ls_date2" property="lsDate" />
+	        <result column="lf_date2" property="lfDate" />
+	        <result column="sche_calc_type2" property="scheCalcType" />
+	       
+	        <result column="weights2" property="weights" />
+	      
+	       
+	      
+	        <result column="task_bal_level2" property="taskBalLevel" />
+	        <result column="critical_task2" property="criticalTask" />
+	        <result column="group_id2" property="groupId" />
+	        <result column="create_user2" property="createUser" />
+	        <result column="create_time2" property="createTime" />
+	        <result column="update_user2" property="updateUser" />
+	        <result column="update_time2" property="updateTime" />
+        </collection >
+        
+        
+    </resultMap>
+
+
+	<sql id="Base_Column_List">
+		 id,task_code,task_name,project_id,wbs_id,calendar_id,resource_id, expense_id,plan_start_date,
+		plan_end_date,plan_duration,task_state,sche_state,principal,task_type,free_float,total_float,limit_type,
+		es_date,ef_date,ls_date,lf_date,sche_calc_type,weights,task_bal_level,critical_task,group_id,
+		create_user,create_time,update_user,update_time
+	</sql>
+
+	<select id="selectScheTasks" parameterType="map" resultMap="BaseResultMap">
+		select  *  from  com_sche_task  a
+		LEFT JOIN
+		(
+			select a.task_next_id,
+			b.id	  	id1	,
+			b.task_code	  	task_code1	,
+			b.task_name	  	task_name1	,
+			b.project_id	  	project_id1	,
+			b.wbs_id	  	wbs_id1	,
+			b.calendar_id	  	calendar_id1	,
+			b.resource_id	  	resource_id1	,
+			b.plan_start_date	  	plan_start_date1	,
+			b.plan_end_date	  	plan_end_date1	,
+			b.plan_duration	  	plan_duration1	,
+		
+			b.expense_id	  	expense_id1	,
+			b.task_state  task_state1,
+			b.sche_state  sche_state1,
+			b.principal	  	principal1	,
+			b.task_type	  	task_type1	,
+			b.free_float	  	free_float1	,
+			b.total_float	  	total_float1	,
+			b.limit_type	  	limit_type1	,
+			b.es_date	  	es_date1	,
+			b.ef_date	  	ef_date1	,
+			b.ls_date	  	ls_date1	,
+			b.lf_date	  	lf_date1	,
+			b.sche_calc_type	  	sche_calc_type1	,
+			
+			b.weights	  	weights1	,
+			
+			
+		
+			b.task_bal_level	  	task_bal_level1	,
+			b.critical_task	  	critical_task1	,
+			b.group_id	  	group_id1	,
+			b.create_user	  	create_user1	,
+			b.create_time	  	create_time1	,
+			b.update_user	  	update_user1	,
+			b.update_time	  	update_time1	
+		
+		from  com_sche_task_relationship   a 
+			LEFT join
+			
+			com_sche_task b ON a.task_pre_id=b.id
+		
+		) b ON a.id =b.task_next_id
+		
+		LEFT JOIN
+		(
+			select a.task_pre_id,
+			b.id	  	id2	,
+			b.task_code	  	task_code2	,
+			b.task_name	  	task_name2	,
+			b.project_id	  	project_id2	,
+			b.wbs_id	  	wbs_id2	,
+			b.calendar_id	  	calendar_id2	,
+			b.resource_id	  	resource_id2	,
+			b.plan_start_date	  	plan_start_date2	,
+			b.plan_end_date	  	plan_end_date2	,
+			b.plan_duration	  	plan_duration2	,
+		
+			b.expense_id	  	expense_id2	,
+			b.task_state  task_state2,
+			b.sche_state  sche_state2,
+			b.principal	  	principal2	,
+			b.task_type	  	task_type2	,
+			b.free_float	  	free_float2	,
+			b.total_float	  	total_float2	,
+			b.limit_type	  	limit_type2	,
+			b.es_date	  	es_date2	,
+			b.ef_date	  	ef_date2	,
+			b.ls_date	  	ls_date2	,
+			b.lf_date	  	lf_date2	,
+			b.sche_calc_type	  	sche_calc_type2	,
+			
+			b.weights	  	weights2	,
+			
+		
+		
+			b.task_bal_level	  	task_bal_level2	,
+			b.critical_task	  	critical_task2	,
+			b.group_id	  	group_id2	,
+			b.create_user	  	create_user2	,
+			b.create_time	  	create_time2	,
+			b.update_user	  	update_user2	,
+			b.update_time	  	update_time2	
+		
+		from  com_sche_task_relationship   a 
+			LEFT join
+			
+			com_sche_task b ON a.task_next_id=b.id
+		
+		) c ON a.id =c.task_pre_id
+		
+		where  a.project_id=#{projectId}
+	
+	
+	</select>
+
+
+</mapper>

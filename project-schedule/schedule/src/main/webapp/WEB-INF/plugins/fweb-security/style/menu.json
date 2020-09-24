@@ -1,0 +1,80 @@
+[
+    {
+        "id": "9000",
+        "text": "header",
+        "icon": "",
+        "isHeader": true
+    },
+    {
+        "id": "9001",
+        "text": "系统管理",
+        "icon": "fa fa-laptop",
+        "children": [
+            {
+                "id": "90011",
+                "text": "用户管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/yhgl",
+				"targetType": "iframe-tab"
+                
+            },{
+                "id": "90012",
+                "text": "角色管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/jsgl",
+				"targetType": "iframe-tab"
+                
+            },{
+                "id": "90013",
+                "text": "组织管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/zzgl",
+				"targetType": "iframe-tab"
+                
+            },{
+                "id": "90014",
+                "text": "菜单管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/cdgl",
+				"targetType": "iframe-tab"
+                
+            },{
+                "id": "90015",
+                "text": "职位管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/zwgl",
+				"targetType": "iframe-tab"
+                
+            },{
+                "id": "90015",
+                "text": "区域管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/qygl",
+				"targetType": "iframe-tab"
+                
+            },{
+                "id": "90015",
+                "text": "页面功能管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/ymgngl",
+				"targetType": "iframe-tab"
+                
+            },{
+                "id": "90015",
+                "text": "字典管理",
+                "icon": "fa fa-circle-o",
+				"urlType": "relative",
+				"url": "view/fweb-security/ac/vueindex#/xtsz/zdgl",
+				"targetType": "iframe-tab"
+                
+            }
+        ]
+    }
+]

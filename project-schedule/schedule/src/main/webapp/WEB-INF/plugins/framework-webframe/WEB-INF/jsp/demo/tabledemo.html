@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>datagrid</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  	<link rel="stylesheet" type="text/css" href="./css/easyui/easyui.css">
+	<link rel="stylesheet" type="text/css" href="./css/easyui/insdep_tables.css">
+  	<link rel="stylesheet" type="text/css" href="./css/easyui/insdep/easyui_plus.css">
+	<link rel="stylesheet" type="text/css" href="./css/easyui/icons/icon.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/easyui/demo.css"> -->
+	<script type="text/javascript" src="./js/easyui/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="./js/easyui/insdep/jquery.insdep-extend.min.js"></script>
+	
+</head>
+<body>
+	
+	<table id="dg" class="easyui-datagrid" style="width:80%;height:auto;">
+		<!-- <thead>
+			<tr>
+				<th data-options="field:'itemid'">Item ID</th>
+				<th data-options="field:'productid'">Product</th>
+				<th data-options="field:'listprice',align:'right'">List Price</th>
+				<th data-options="field:'unitcost',align:'right'">Unit Cost</th>
+				<th data-options="field:'attr1'">Attribute</th>
+				<th data-options="field:'status',align:'center'">Status</th>
+			</tr>
+		</thead> -->
+	</table>
+	<script type="text/javascript">
+		$("#dg").datagrid({
+			pagination : true,
+			method : 'get',
+			url : '127.0.0.1:8088/demoframe/userinfo/page',
+			singleSelect : true,
+			columns : [[
+			    {
+					field : 'userName',
+					title : '用户名'
+			    },{
+			    	field : 'mobile',
+					title : '手机号'
+			    },{
+			    	field : 'userType',
+					title : '用户类型'
+			    }
+				
+			]],
+		});
+	</script>
+
+</script>
+
+</body>
+</html>

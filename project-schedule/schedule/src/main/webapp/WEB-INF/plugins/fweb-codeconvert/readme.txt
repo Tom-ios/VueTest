@@ -1,0 +1,1 @@
+META-INF/resources/目录用来存放静态文件。

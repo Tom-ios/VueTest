@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | with iframe</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+<!--     <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css"> -->
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="./assets/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="./iCheck/all.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./css/AdminLTE.css">
+<!--     <link rel="stylesheet" href="./css/AdminLTE.min.css"> -->
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <!-- <link rel="stylesheet" href="./css/skins/all-skins.min.css"> -->
+    <link rel="stylesheet" href="./css/skins/_all-skins.css">
+    <link rel="stylesheet" href="./css/bootstrap-spinner.css">
+    
+    <link rel="stylesheet" href="./css/jquery.gritter.css">
+    <link rel="stylesheet" href="./css/gritter.extra.css">
+
+    <!--http://aimodu.org:7777/admin/index_iframe.html?q=audio&search=#-->
+    <style type="text/css">
+        html,body{
+            overflow: hidden;
+            -ms-scroll-chaining: chained;
+		    -ms-overflow-style: none;
+		    -ms-content-zooming: zoom;
+		    -ms-scroll-rails: none;
+		    -ms-content-zoom-limit-min: 100%;
+		    -ms-content-zoom-limit-max: 500%;
+		    -ms-scroll-snap-type: proximity;
+		    -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+		    -ms-overflow-style: none;
+        }
+        .control-sidebar{
+        	overflow: auto;
+        }
+        .icheckbox_flat-green{
+        	float: right;
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../plugins/ie9/html5shiv.min.js"></script>
+    <script src="../plugins/ie9/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body class="hold-transition skin-green-light sidebar-mini fixed fs_14">
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="./index2.html" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>A</b>LT</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>Admin</b>LTE</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" onresize="alert('aaa');">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Messages: style can be found in dropdown.less-->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li><!-- start message -->
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="./img/user2-160x160.jpg" class="img-circle"
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <!-- end message -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="./img/user3-128x128.jpg" class="img-circle"
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                AdminLTE Design Team
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="./img/user4-128x128.jpg" class="img-circle"
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Developers
+                                                <small><i class="fa fa-clock-o"></i> Today</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="./img/user3-128x128.jpg" class="img-circle"
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Sales Department
+                                                <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="./img/user4-128x128.jpg" class="img-circle"
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Reviewers
+                                                <small><i class="fa fa-clock-o"></i> 2 days</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">See All Messages</a></li>
+                        </ul>
+                    </li>
+                    <!-- Notifications: style can be found in dropdown.less -->
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-warning text-yellow"></i> Very long description here that
+                                            may not fit into the
+                                            page and may cause design problems
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-red"></i> 5 new members joined
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user text-light-blue"></i> You changed your username
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tasks: style can be found in dropdown.less -->
+                    <li class="dropdown tasks-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label label-danger">9</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 9 tasks</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li><!-- Task item -->
+                                        <a href="#">
+                                            <h3>
+                                                Design some buttons
+                                                <small class="pull-right">20%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                                <div class="progress-bar progress-bar-aqua" style="width: 20%"
+                                                     role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                     aria-valuemax="100">
+                                                    <span class="sr-only">20% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li><!-- Task item -->
+                                        <a href="#">
+                                            <h3>
+                                                Create a nice theme
+                                                <small class="pull-right">40%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                                <div class="progress-bar progress-bar-green" style="width: 40%"
+                                                     role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                     aria-valuemax="100">
+                                                    <span class="sr-only">40% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li><!-- Task item -->
+                                        <a href="#">
+                                            <h3>
+                                                Some task I need to do
+                                                <small class="pull-right">60%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                                <div class="progress-bar progress-bar-red" style="width: 60%"
+                                                     role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                     aria-valuemax="100">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li><!-- Task item -->
+                                        <a href="#">
+                                            <h3>
+                                                Make beautiful transitions
+                                                <small class="pull-right">80%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                                <div class="progress-bar progress-bar-yellow" style="width: 80%"
+                                                     role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                     aria-valuemax="100">
+                                                    <span class="sr-only">80% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="#">View all tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="./img/user2-160x160.jpg" class="user-image" alt="User Image">
+                            <span class="hidden-xs">Alexander Pierce</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="./img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                <p>
+                                    Alexander Pierce - Web Developer
+                                    <small>Member since Nov. 2012</small>
+                                </p>
+                            </li>
+                            <!-- Menu Body -->
+                            <li class="user-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Followers</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Sales</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Friends</a>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Control Sidebar Toggle Button -->
+                    <li>
+                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <!-- <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="./img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>Alexander Pierce</p>
+                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                </div>
+            </div> -->
+            <!-- search form -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                <button type="button" name="search" id="search-btn" class="btn btn-flat" onclick="search_menu()"><i class="fa fa-search"></i>
+                </button>
+              </span>
+                </div>
+            </form>
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" id="content-wrapper" style="min-height: 421px;background-color: #ecf0f5;">
+        <!--bootstrap tab风格 多标签页-->
+        <div class="content-tabs">
+            <nav class="page-tabs menuTabs tab-ui-menu" id="tab-menu">
+                <div class="page-tabs-content" style="margin-left: 0px;">
+
+                </div>
+            </nav>
+            <button class="roll-nav roll-right tabRight" onclick="scrollTabLeft()" style="right:160px;">
+                <i class="fa fa-caret-left"></i>
+            </button>
+            <button class="roll-nav roll-right tabRight" onclick="scrollTabRight()">
+                <i class="fa fa-caret-right" style="margin-left: 3px;"></i>
+            </button>
+            <div class="btn-group roll-nav roll-right">
+                <button class="dropdown tabClose" data-toggle="dropdown">
+                    页签操作<i class="fa fa-caret-down" style="padding-left: 3px;"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" style="min-width: 128px;">
+                    <li><a class="tabReload" href="javascript:refreshTab();">刷新当前</a></li>
+                    <li><a class="tabCloseCurrent" href="javascript:closeCurrentTab();">关闭当前</a></li>
+                    <li><a class="tabCloseAll" href="javascript:closeOtherTabs(true);">全部关闭</a></li>
+                    <li><a class="tabCloseOther" href="javascript:closeOtherTabs();">除此之外全部关闭</a></li>
+                </ul>
+            </div>
+            <button class="roll-nav roll-right fullscreen" onclick="App.handleFullScreen(this)"><i
+                    class="fa fa-arrows-alt"></i></button>
+        </div>
+        <div class="content-iframe " style="background-color: #ecf0f5; ">
+            <div class="tab-content " id="tab-content" style="background-color: #ecf0f5; ">
+
+            </div>
+        </div>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 2.3.8
+        </div>
+        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+        reserved.
+    </footer> -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <!-- <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li> -->
+            <li id="control-sidebar-settings-tab-li"><a id="aaatest" href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Home tab content -->
+            <!-- <div class="tab-pane" id="control-sidebar-home-tab">
+               
+
+            </div> -->
+            <!-- /.tab-pane -->
+            <!-- Stats tab content -->
+            <!-- <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div> -->
+            <!-- /.tab-pane -->
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+            	<div class="row">
+            		<label class="col-xs-5">字体尺寸</label>
+			    	<div class="input-group spinner col-xs-6" data-trigger="spinner" id="font-size-spinner">
+			        	<input type="text" id="font-size-spinner-input" class="form-control text-center" value="0" data-max="20" data-min="0" data-step="2">
+			          	<div class="input-group-addon">
+				            <a href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
+				            <a href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+			          	</div>
+			        </div>
+				</div>
+            </div>
+            <!-- /.tab-pane -->
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+</div>
+
+<!-- jQuery 2.2.3 -->
+	<script src="./js/jquery-2.2.3.min.js"></script>
+	<!-- Bootstrap 3.3.6 -->
+	<script src="./js/bootstrap.min.js"></script>
+	<!-- Slimscroll -->
+	<script src="./js/jquery.slimscroll.min.js"></script>
+	<!-- iCheck -->
+	<script src="./iCheck/iCheck.min.js"></script>
+	<!-- FastClick -->
+	<script src="./js/fastclick.js"></script>
+	<!-- AdminLTE App -->
+	<script src="./js/app.js"></script>
+	<!-- <script src="./js/adminlte.js"></script> -->
+	<!-- <script src="./js/jquery-3.2.1.slim.js"></script> -->
+	<!-- 数字增殖器 -->
+	<script src="./js/jquery.spinner.min.js"></script>
+	<!-- 提示框 -->
+	<script type="text/javascript" src="./js/jquery.gritter.min.js"></script>
+	<!-- AdminLTE for demo purposes -->
+	<!-- <script src="./js/demo_iframe.js"></script> -->
+	<script src="./js/fweb_fs.js"></script>
+	<script src="./js/demo_4iframe.js"></script>
+	<!--tabs-->
+	<script src="./js/app_iframe.js"></script>
+
+<script type="text/javascript">
+    /**
+     * 本地搜索菜单
+     */
+    function search_menu() {
+        //要搜索的值
+        var text = $('input[name=q]').val();
+
+        var $ul = $('.sidebar-menu');
+        $ul.find("a.nav-link").each(function () {
+            var $a = $(this).css("border","");
+
+            //判断是否含有要搜索的字符串
+            if ($a.children("span.menu-text").text().indexOf(text) >= 0) {
+
+                //如果a标签的父级是隐藏的就展开
+                $ul = $a.parents("ul");
+
+                if ($ul.is(":hidden")) {
+                    $a.parents("ul").prev().click();
+                }
+
+                //点击该菜单
+                $a.click().css("border","1px solid");
+
+//                return false;
+            }
+        });
+    }
+
+    $(function () {
+//        console.log(window.location);
+
+        App.setbasePath("127.0.0.1:8088/demoframe/");
+		App.setGlobalImgPath("view/img/");
+
+        addTabs({
+            id: '10008',
+            title: '欢迎页',
+            close: false,
+            url: 'crumb_manager2',
+            urlType: "relative"
+        });
+
+        App.fixIframeCotent();
+
+        var menus = [
+            {
+                id: "9000",
+                text: "header",
+                icon: "",
+                isHeader: true
+            },
+            {
+                id: "9001",
+                text: "表格",
+                icon: "fa fa-laptop",
+                children: [
+                    {
+                        id: "90011",
+                        text: "用户信息",
+                        icon: "fa fa-circle-o",
+                        url: "basetable",
+                        targetType: "iframe-tab"
+                    },
+                    {
+                        id: "90012",
+                        text: "demo",
+                        url: "demo",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90013",
+                        text: "general",
+                        url: "UI/general_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90014",
+                        text: "modals",
+                        url: "UI/modals_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90015",
+                        text: "sliders",
+                        url: "UI/sliders_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90016",
+                        text: "timeline",
+                        url: "UI/timeline_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    }
+                ]
+            },
+            {
+                id: "9002",
+                text: "Forms",
+                icon: "fa fa-edit",
+                children: [
+                    {
+                        id: "90021",
+                        text: "advanced",
+                        url: "forms/advanced_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90022",
+                        text: "general",
+                        url: "forms/general_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90023",
+                        text: "editors",
+                        url: "forms/editors_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90024",
+                        text: "editors",
+                        url: "forms/editors_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90025",
+                        text: "editors",
+                        url: "forms/editors_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90026",
+                        text: "editors",
+                        url: "forms/editors_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90027",
+                        text: "editors",
+                        url: "forms/editors_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90028",
+                        text: "editors",
+                        url: "forms/editors_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    },
+                    {
+                        id: "90029",
+                        text: "editors",
+                        url: "forms/editors_iframe.html",
+                        targetType: "iframe-tab",
+                        icon: "fa fa-circle-o"
+                    }
+                ]
+            }
+        ];
+        $('.sidebar-menu').sidebarMenu({data: menus});
+
+    });
+</script>
+
+</body>
+</html>
